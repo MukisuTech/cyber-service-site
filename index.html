@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0e3c7b" />
+  <title>Infinity Solutions Online Cyber</title>
+  <meta name="description" content="Fast, reliable and affordable online government and digital services in Kenya." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-9uX+o9/ZMZbm3tTFRNrU0xj9IqA9xVRBhZ33g1PPZFxK8Hz9vA3V2rOO4/VXvWPXeEPmWZhwXmr4TmA3r/t8Mw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="spinner-overlay" id="spinner">
+    <div class="loader"></div>
+  </div>
+
+  <header class="hero" id="home">
+    <div class="topbar">
+      <a class="brand" href="#home">Infinity Solutions Online Cyber</a>
+      <div class="top-actions">
+        <button class="mode-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#order">Order</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-text fade-up">
+        <p class="eyebrow">Kenya's fastest digital services hub</p>
+        <h1>Infinity Solutions Online Cyber</h1>
+        <p class="hero-subtitle">Fast, Reliable & Affordable Online Government and Digital Services in Kenya.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#order">Order a Service</a>
+          <a class="btn btn-secondary" id="whatsappChat" href="https://wa.me/254112087299" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="hero-card fade-up">
+        <div class="hero-panel">
+          <span class="tag">Trusted Services</span>
+          <p>We help Kenyans complete eCitizen, KRA, NHIF, NSSF, HELB and business services fast.</p>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <strong>99%</strong>
+            <span>Customer satisfaction</span>
+          </div>
+          <div>
+            <strong>Fast</strong>
+            <span>WhatsApp support</span>
+          </div>
+          <div>
+            <strong>Affordable</strong>
+            <span>Service pricing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="order"></div>
+    <section class="section service-section" id="services">
+      <div class="section-heading fade-up">
+        <p class="eyebrow">Our Services</p>
+        <h2>Search and order the service you need.</h2>
+      </div>
+      <div class="search-wrap fade-up">
+        <input id="searchInput" type="search" placeholder="Search for a service..." aria-label="Search for a service" />
+      </div>
+
+      <div class="service-grid" id="serviceGrid">
+        <article class="service-card fade-up" data-service="SHA Registration">
+          <div class="service-icon"><i class="fa-solid fa-user-check"></i></div>
+          <h3>SHA Registration</h3>
+          <p>Register with the Social Health Authority quickly and securely.</p>
+          <button class="btn btn-order" data-service="SHA Registration">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="SHA Contribution Check">
+          <div class="service-icon"><i class="fa-solid fa-money-bill-transfer"></i></div>
+          <h3>SHA Contribution Check</h3>
+          <p>Verify your contributions and receive a detailed update.</p>
+          <button class="btn btn-order" data-service="SHA Contribution Check">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="SHA Dependants Registration">
+          <div class="service-icon"><i class="fa-solid fa-user-group"></i></div>
+          <h3>SHA Dependants Registration</h3>
+          <p>Add family members to your SHA account with fast processing.</p>
+          <button class="btn btn-order" data-service="SHA Dependants Registration">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="KRA PIN Registration">
+          <div class="service-icon"><i class="fa-solid fa-id-card"></i></div>
+          <h3>KRA PIN Registration</h3>
+          <p>Register for your KRA PIN for tax compliance and business services.</p>
+          <button class="btn btn-order" data-service="KRA PIN Registration">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="KRA PIN Retrieval">
+          <div class="service-icon"><i class="fa-solid fa-key"></i></div>
+          <h3>KRA PIN Retrieval</h3>
+          <p>Recover your KRA PIN fast when you can’t find your details.</p>
+          <button class="btn btn-order" data-service="KRA PIN Retrieval">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="KRA Returns Filing">
+          <div class="service-icon"><i class="fa-solid fa-file-invoice"></i></div>
+          <h3>KRA Returns Filing</h3>
+          <p>File your tax returns accurately and avoid late penalties.</p>
+          <button class="btn btn-order" data-service="KRA Returns Filing">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Tax Compliance Certificate">
+          <div class="service-icon"><i class="fa-solid fa-certificate"></i></div>
+          <h3>Tax Compliance Certificate</h3>
+          <p>Secure your compliance certificate for contracts and tenders.</p>
+          <button class="btn btn-order" data-service="Tax Compliance Certificate">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="HELB Registration">
+          <div class="service-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>HELB Registration</h3>
+          <p>Register for HELB support and access education financing.</p>
+          <button class="btn btn-order" data-service="HELB Registration">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="HELB Loan Application">
+          <div class="service-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+          <h3>HELB Loan Application</h3>
+          <p>Apply for student loans with expert form guidance.</p>
+          <button class="btn btn-order" data-service="HELB Loan Application">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="HELB Appeal">
+          <div class="service-icon"><i class="fa-solid fa-gavel"></i></div>
+          <h3>HELB Appeal</h3>
+          <p>Submit appeals for HELB decisions with support from our team.</p>
+          <button class="btn btn-order" data-service="HELB Appeal">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="KUCCPS Revision">
+          <div class="service-icon"><i class="fa-solid fa-pen-to-square"></i></div>
+          <h3>KUCCPS Revision</h3>
+          <p>Update your KUCCPS choices for university selection.</p>
+          <button class="btn btn-order" data-service="KUCCPS Revision">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="KUCCPS Application">
+          <div class="service-icon"><i class="fa-solid fa-school"></i></div>
+          <h3>KUCCPS Application</h3>
+          <p>Complete your KUCCPS application with guided support.</p>
+          <button class="btn btn-order" data-service="KUCCPS Application">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="eCitizen Services">
+          <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>eCitizen Services</h3>
+          <p>Access passport, permits and government applications fast.</p>
+          <button class="btn btn-order" data-service="eCitizen Services">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Good Conduct Application">
+          <div class="service-icon"><i class="fa-solid fa-user-shield"></i></div>
+          <h3>Good Conduct Application</h3>
+          <p>Apply for a police clearance certificate seamlessly.</p>
+          <button class="btn btn-order" data-service="Good Conduct Application">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Passport Application">
+          <div class="service-icon"><i class="fa-solid fa-passport"></i></div>
+          <h3>Passport Application</h3>
+          <p>Submit passport applications with professional support.</p>
+          <button class="btn btn-order" data-service="Passport Application">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Driving License Renewal">
+          <div class="service-icon"><i class="fa-solid fa-car-side"></i></div>
+          <h3>Driving License Renewal</h3>
+          <p>Renew your driving license with quick online guidance.</p>
+          <button class="btn btn-order" data-service="Driving License Renewal">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="NTSA Services">
+          <div class="service-icon"><i class="fa-solid fa-road"></i></div>
+          <h3>NTSA Services</h3>
+          <p>Book vehicle, licensing and road permit services easily.</p>
+          <button class="btn btn-order" data-service="NTSA Services">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Birth Certificate Application">
+          <div class="service-icon"><i class="fa-solid fa-baby"></i></div>
+          <h3>Birth Certificate Application</h3>
+          <p>Apply for birth certificates with reliable help.</p>
+          <button class="btn btn-order" data-service="Birth Certificate Application">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="NSSF Services">
+          <div class="service-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+          <h3>NSSF Services</h3>
+          <p>Manage your NSSF contributions and registration online.</p>
+          <button class="btn btn-order" data-service="NSSF Services">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="NHIF Services">
+          <div class="service-icon"><i class="fa-solid fa-hospital"></i></div>
+          <h3>NHIF Services</h3>
+          <p>Access NHIF registration, updates and membership support.</p>
+          <button class="btn btn-order" data-service="NHIF Services">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Gmail Creation">
+          <div class="service-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h3>Gmail Creation</h3>
+          <p>Create professional email accounts with fast setup.</p>
+          <button class="btn btn-order" data-service="Gmail Creation">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Email Recovery">
+          <div class="service-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+          <h3>Email Recovery</h3>
+          <p>Recover lost emails and secure your inbox quickly.</p>
+          <button class="btn btn-order" data-service="Email Recovery">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="CV Writing">
+          <div class="service-icon"><i class="fa-solid fa-file-lines"></i></div>
+          <h3>CV Writing</h3>
+          <p>Build a professional CV that stands out to employers.</p>
+          <button class="btn btn-order" data-service="CV Writing">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Job Applications">
+          <div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <h3>Job Applications</h3>
+          <p>Receive help with job search forms and interview prep.</p>
+          <button class="btn btn-order" data-service="Job Applications">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Online Applications">
+          <div class="service-icon"><i class="fa-solid fa-laptop"></i></div>
+          <h3>Online Applications</h3>
+          <p>Complete digital forms and applications with ease.</p>
+          <button class="btn btn-order" data-service="Online Applications">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Visa Applications">
+          <div class="service-icon"><i class="fa-solid fa-plane-circle-check"></i></div>
+          <h3>Visa Applications</h3>
+          <p>Submit visa documents and track your application status.</p>
+          <button class="btn btn-order" data-service="Visa Applications">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Flight Booking">
+          <div class="service-icon"><i class="fa-solid fa-plane"></i></div>
+          <h3>Flight Booking</h3>
+          <p>Book affordable flights across Kenya and international routes.</p>
+          <button class="btn btn-order" data-service="Flight Booking">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Hotel Booking">
+          <div class="service-icon"><i class="fa-solid fa-hotel"></i></div>
+          <h3>Hotel Booking</h3>
+          <p>Reserve hotels with support for the best travel deals.</p>
+          <button class="btn btn-order" data-service="Hotel Booking">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Printing">
+          <div class="service-icon"><i class="fa-solid fa-print"></i></div>
+          <h3>Printing</h3>
+          <p>High-quality printing for documents, posters and more.</p>
+          <button class="btn btn-order" data-service="Printing">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Scanning">
+          <div class="service-icon"><i class="fa-solid fa-file-invoice"></i></div>
+          <h3>Scanning</h3>
+          <p>Fast document scanning for digital records and applications.</p>
+          <button class="btn btn-order" data-service="Scanning">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Photocopy">
+          <div class="service-icon"><i class="fa-solid fa-copy"></i></div>
+          <h3>Photocopy</h3>
+          <p>Quick and accurate photocopying for all document types.</p>
+          <button class="btn btn-order" data-service="Photocopy">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Typing">
+          <div class="service-icon"><i class="fa-solid fa-keyboard"></i></div>
+          <h3>Typing</h3>
+          <p>Professional typing support for letters, reports and forms.</p>
+          <button class="btn btn-order" data-service="Typing">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Graphic Design">
+          <div class="service-icon"><i class="fa-solid fa-paintbrush"></i></div>
+          <h3>Graphic Design</h3>
+          <p>Create logos, flyers and marketing visuals with expert design.</p>
+          <button class="btn btn-order" data-service="Graphic Design">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Passport Photos">
+          <div class="service-icon"><i class="fa-solid fa-camera"></i></div>
+          <h3>Passport Photos</h3>
+          <p>Capture and print passport photos in the correct format.</p>
+          <button class="btn btn-order" data-service="Passport Photos">Order Now</button>
+        </article>
+        <article class="service-card fade-up" data-service="Lamination">
+          <div class="service-icon"><i class="fa-solid fa-stamp"></i></div>
+          <h3>Lamination</h3>
+          <p>Protect important documents with high-quality lamination.</p>
+          <button class="btn btn-order" data-service="Lamination">Order Now</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading fade-up">
+        <p class="eyebrow">About Us</p>
+        <h2>Reliable online services across Kenya.</h2>
+      </div>
+      <div class="about-grid fade-up">
+        <div class="about-copy">
+          <p>Infinity Solutions Online Cyber offers fast and reliable online services across Kenya. We specialize in government services, education applications, tax services, cyber services, online applications, printing, and ICT support.</p>
+          <p>We provide quality customer service with quick response through WhatsApp so clients can complete their work without delays.</p>
+        </div>
+        <div class="about-features">
+          <div><i class="fa-solid fa-check"></i> Fast application support</div>
+          <div><i class="fa-solid fa-check"></i> Secure digital processing</div>
+          <div><i class="fa-solid fa-check"></i> Professional customer care</div>
+          <div><i class="fa-solid fa-check"></i> Affordable service packages</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading fade-up">
+        <p class="eyebrow">Contact</p>
+        <h2>Ready to get started?</h2>
+      </div>
+      <div class="contact-grid fade-up">
+        <div class="contact-card">
+          <h3>Business Name</h3>
+          <p>Infinity Solutions Online Cyber</p>
+        </div>
+        <div class="contact-card">
+          <h3>Phone</h3>
+          <p>0112087299</p>
+        </div>
+        <div class="contact-card">
+          <h3>WhatsApp</h3>
+          <p>0112087299</p>
+        </div>
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p><a href="mailto:bruxeb4@gmail.com">bruxeb4@gmail.com</a></p>
+        </div>
+        <div class="contact-card">
+          <h3>Location</h3>
+          <p>Kenya</p>
+        </div>
+        <div class="contact-card">
+          <h3>Business Hours</h3>
+          <p>Monday - Saturday: 8:00 AM - 8:00 PM</p>
+          <p>Sunday: 9:00 AM - 5:00 PM</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content fade-up">
+      <p>© 2026 Infinity Solutions Online Cyber All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <a class="floating-whatsapp" href="https://wa.me/254112087299" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
