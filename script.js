@@ -12,6 +12,25 @@ const spinner = document.getElementById('spinner');
 
 const WHATSAPP_ORDER_NUMBER = '0112087299';
 const WHATSAPP_CHAT_NUMBER = '254112087299';
+const DEFAULT_LOGO_PLACEHOLDER = 'https://tse4.mm.bing.net/th/id/OIP.yBloclplDqVMJ-Tg9L9eTgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3';
+const SERVICE_LOGOS = {
+  'KRA PIN Registration': 'https://www.kra.go.ke/templates/kra/images/kra/logoKRA.webp',
+  'KRA PIN Retrieval': 'https://www.kra.go.ke/templates/kra/images/kra/logoKRA.webp',
+  'KRA Returns Filing': 'https://www.kra.go.ke/templates/kra/images/kra/logoKRA.webp',
+  'Tax Compliance Certificate': 'https://www.kra.go.ke/templates/kra/images/kra/logoKRA.webp',
+  'HELB Registration': 'https://tse4.mm.bing.net/th/id/OIP.b57VldhlAnYkFkh-BjnOfwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3',
+  'HELB Loan Application': 'https://tse4.mm.bing.net/th/id/OIP.b57VldhlAnYkFkh-BjnOfwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3',
+  'HELB Appeal': 'https://tse4.mm.bing.net/th/id/OIP.b57VldhlAnYkFkh-BjnOfwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3',
+  'eCitizen Services': 'https://tse3.mm.bing.net/th/id/OIP.UHPo66fuk0P1zGOrm8lOLwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3',
+};
+
+const setLogoPlaceholders = () => {
+  document.querySelectorAll('.service-card').forEach((card) => {
+    const serviceName = card.dataset.service?.trim();
+    const logoUrl = card.dataset.logo || SERVICE_LOGOS[serviceName] || DEFAULT_LOGO_PLACEHOLDER;
+    card.dataset.logo = logoUrl;
+  });
+};
 
 const setTheme = (mode) => {
   if (mode === 'dark') {
@@ -134,5 +153,6 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
+setLogoPlaceholders();
 initTheme();
 

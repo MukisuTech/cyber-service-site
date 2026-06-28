@@ -339,6 +339,22 @@ img {
   color: var(--primary);
   margin-bottom: 1.25rem;
   font-size: 1.3rem;
+  overflow: hidden;
+}
+
+.brand-logo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  margin-right: 0.85rem;
+  vertical-align: middle;
+}
+
+.service-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .service-card h3 {
