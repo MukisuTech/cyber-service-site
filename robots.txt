@@ -1,5 +1,8 @@
 User-agent: *
-
 Allow: /
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
 
 Sitemap: https://mukisutech.github.io/cyber-service-site/sitemap.xml
+Host: mukisutech.github.io

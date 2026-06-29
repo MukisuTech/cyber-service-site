@@ -50,6 +50,19 @@ button {
 img {
   max-width: 100%;
   display: block;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  line-height: 1.4;
+}
+
+html {
+  font-size: 16px;
 }
 
 .spinner-overlay {
@@ -377,6 +390,7 @@ img {
   overflow: hidden;
 }
 
+.service-card h2,
 .service-card h3 {
   margin: 0 0 0.8rem;
   font-size: 1.12rem;
@@ -692,6 +706,21 @@ img {
   .menu-toggle {
     width: 44px;
     height: 44px;
+  }
+  .hero-card,
+  .contact-card,
+  .about-features div {
+    padding: 1.4rem;
+  }
+  .section {
+    padding: 2rem 1rem 1.8rem;
+  }
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
 
